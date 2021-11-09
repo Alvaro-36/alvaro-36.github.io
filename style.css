@@ -1,0 +1,51 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    /* Fondo */
+
+    background: rgb(0,167,184);
+    background: -moz-linear-gradient(90deg, rgba(0,167,184,1) 5%, rgba(25,107,181,1) 21%, rgba(62,78,176,1) 47%, rgba(99,211,183,1) 76%, rgba(113,183,255,1) 100%, rgba(170,197,255,0.6614845767408526) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(0,167,184,1) 5%, rgba(25,107,181,1) 21%, rgba(62,78,176,1) 47%, rgba(99,211,183,1) 76%, rgba(113,183,255,1) 100%, rgba(170,197,255,0.6614845767408526) 100%);
+    background: linear-gradient(90deg, rgba(0,167,184,1) 5%, rgba(25,107,181,1) 21%, rgba(62,78,176,1) 47%, rgba(99,211,183,1) 76%, rgba(113,183,255,1) 100%, rgba(170,197,255,0.6614845767408526) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#00a7b8",endColorstr="#aac5ff",GradientType=1); 
+}
+.tablero {
+    width: 50%;
+    border-collapse: collapse;
+    border-style: hidden;
+    margin-top: 2vw;
+}
+.tablero__td {
+    border: 1vw solid rgb(255, 255, 255);
+    padding: 5%;
+    text-align: center; 
+    vertical-align: middle;
+}
+.tablero__td div {
+    min-height: 6vw;
+    min-width: 6vw;
+}
+.tablero__td img {
+    width: 5vw;
+    display: none;
+
+}
+.reset {
+    padding: 1vw 2vw 1vw 2vw;
+    border-style: none;
+    background-color: rgba(255, 255, 255, 0.603);
+    border-radius: .5vw;
+    margin: 2vw;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2vw;
+    box-sizing: border-box;
+    transition: .1s ease 0s;
+}
+.reset:active {
+    background-color: rgb(255, 255, 255);
+    border: .08vw solid rgb(110, 110, 110);
+    padding: .8vw 1.8vw .8vw 1.8vw;
+}
